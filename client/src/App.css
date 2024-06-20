@@ -1,0 +1,123 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img {
+  background: url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.switch-field {
+display: flex;
+margin-bottom: 36px;
+overflow: hidden;
+}
+
+.switch-field input {
+position: absolute !important;
+clip: rect(0, 0, 0, 0);
+height: 10px;
+width: 10px;
+border: 0;
+overflow: hidden;
+}
+
+.switch-field label {
+background-color: #e4e4e4;
+color: rgba(0, 0, 0, 0.6);
+font-size: 18px;
+line-height: 1;
+text-align: center;
+padding: 8px 16px;
+margin-right: -1px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+cursor: pointer;
+}
+
+.switch-field input:checked + label {
+background-color: #a5dc86;
+box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+border-radius: 0 4px 4px 0;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form h1 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.area, .location, .land-size {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.result {
+  text-align: center;
+  font-weight: bold;
+  background: #54b9da;
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+}
